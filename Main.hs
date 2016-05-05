@@ -69,8 +69,8 @@ parseOp s =
 
 opts = info (helper <*> options)
             (fullDesc <> header "datefilter"
-            <> progDesc "filters DSV input by reference date"
-            <> footer "See http://hackage.haskell.org/package/time-1.5.0.1/docs/Data-Time-Format.html for format codes")
+            <> progDesc "Filters DSV input by reference date"
+            <> footer "Homepage: https://github.com/danchoi/datefilter. See http://hackage.haskell.org/package/time-1.5.0.1/docs/Data-Time-Format.html for format codes")
 
 main :: IO ()
 main = do

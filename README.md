@@ -7,7 +7,7 @@
     
     Usage: datefilter [-F DELIMITER] [-p FMT] [-r FMT] [FIELD] [COMPARISION-OP]
                       REFDATE [-v]
-      filters DSV input by reference date
+      Filters DSV input by reference date
     
     Available options:
       -h,--help                Show this help text
