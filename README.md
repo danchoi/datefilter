@@ -33,4 +33,7 @@ Command and output:
     $ cat test | datefilter 2 '>' 2016-05-01 
     dog 2016-05-03
 
+## Install
+
+    stack install
 
