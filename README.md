@@ -20,6 +20,9 @@
                                fmt
       -v                       Verbose logging
 
+    See http://hackage.haskell.org/package/time-1.5.0.1/docs/Data-Time-Format.html
+    for format code
+
 Sample input:
 
     cat 2016-05-01
