@@ -12,7 +12,7 @@
     Available options:
       -h,--help                Show this help text
       -F DELIMITER             Input delimiter. Default whitespace
-      -p FMT                   Input date parse format. Default %Y-%m-%d
+      -i FMT                   Input date parse format. Default %Y-%m-%d
       -r FMT                   Ref date parse format. Default %Y-%m-%d
       FIELD                    Field position. Starts at 1. Default 1
       COMPARISION-OP           =, >, <, >=, OR <=. Default >=

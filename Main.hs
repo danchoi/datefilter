@@ -27,7 +27,7 @@ options = Options
         <> help "Input delimiter. Default whitespace"
         <> value " "))
   <*> strOption 
-      ( short 'p'
+      ( short 'i'
      <> metavar "FMT"
      <> help "Input date parse format. Default %Y-%m-%d"
      <> value "%Y-%m-%d" )
