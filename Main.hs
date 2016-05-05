@@ -38,13 +38,12 @@ options = Options
      <> value "%Y-%m-%d" )
   <*> argument auto 
       ( metavar "FIELD"
-      <> help "Field position. Starts at 1. Default 1"
-      <> value 1)
+      <> help "Field position. Starts at 1."
+      )
   <*> (parseOp <$> 
         strArgument
           ( metavar "COMPARISION-OP"
           <> help "=, >, <, >=, OR <=. Default >="
-          <> value ">="
           ))
   <*> strArgument 
       ( metavar "REFDATE"

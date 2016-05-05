@@ -5,8 +5,8 @@
 
     datefilter
     
-    Usage: datefilter [-F DELIMITER] [-p FMT] [-r FMT] [FIELD] [COMPARISION-OP]
-                      REFDATE [-v]
+    Usage: datefilter [-F DELIMITER] [-i FMT] [-r FMT] FIELD COMPARISION-OP REFDATE
+                      [-v]
       Filters DSV input by reference date
     
     Available options:
@@ -14,14 +14,15 @@
       -F DELIMITER             Input delimiter. Default whitespace
       -i FMT                   Input date parse format. Default %Y-%m-%d
       -r FMT                   Ref date parse format. Default %Y-%m-%d
-      FIELD                    Field position. Starts at 1. Default 1
+      FIELD                    Field position. Starts at 1.
       COMPARISION-OP           =, >, <, >=, OR <=. Default >=
       REFDATE                  Reference date for comparison. Parsed with ref date
                                fmt
       -v                       Verbose logging
-
-    See http://hackage.haskell.org/package/time-1.5.0.1/docs/Data-Time-Format.html
-    for format code
+    
+    Homepage: https://github.com/danchoi/datefilter. See
+    http://hackage.haskell.org/package/time-1.5.0.1/docs/Data-Time-Format.html for
+    format codes
 
 Sample input:
 
