@@ -43,7 +43,7 @@ options = Options
   <*> (parseOp <$> 
         strArgument
           ( metavar "COMPARISION-OP"
-          <> help "=, >, <, >=, OR <=. Default >="
+          <> help "=, >, <, >=, OR <=. Enclose in quotes to prevent clash with shell redirection ops"
           ))
   <*> strArgument 
       ( metavar "REFDATE"

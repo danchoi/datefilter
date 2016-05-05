@@ -15,7 +15,8 @@
       -i FMT                   Input date parse format. Default %Y-%m-%d
       -r FMT                   Ref date parse format. Default %Y-%m-%d
       FIELD                    Field position. Starts at 1.
-      COMPARISION-OP           =, >, <, >=, OR <=. Default >=
+      COMPARISION-OP           =, >, <, >=, OR <=. Enclose in quotes to prevent
+                               clash with shell redirection ops
       REFDATE                  Reference date for comparison. Parsed with ref date
                                fmt
       -v                       Verbose logging
