@@ -95,4 +95,4 @@ main = do
 
 debug :: Bool -> String -> IO ()
 debug False _ = return ()
-debug True s = putStrLn s
+debug True s = putStrLn $ "Log: " ++ s

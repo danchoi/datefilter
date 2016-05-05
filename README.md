@@ -33,7 +33,19 @@ Command and output:
     $ cat test | datefilter 2 '>' 2016-05-01 
     dog 2016-05-03
 
+Verbose logging:
+
+    $ cat test | datefilter 2 '>' 2016-05-01 -v
+    Log: Field value: "2016-05-01"
+    Log: Parsed field date: Just 2016-05-01
+    Log: Comparision result: Just False
+    Log: Field value: "2016-05-03"
+    Log: Parsed field date: Just 2016-05-03
+    Log: Comparision result: Just True
+    dog 2016-05-03
+
 ## Install
 
     stack install
+
 
