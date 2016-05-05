@@ -39,6 +39,7 @@ Command and output:
 Verbose logging:
 
     $ cat test | datefilter 2 '>' 2016-05-01 -v
+    Log: Parsed reference date: 2016-05-01
     Log: Field value: "2016-05-01"
     Log: Parsed field date: Just 2016-05-01
     Log: Comparision result: Just False

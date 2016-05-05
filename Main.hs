@@ -79,6 +79,7 @@ main = do
   let refDate' :: Day
       refDate' = maybe (error $ "Can't parse refDate: " ++ show refDate) 
                        id $ parseTimeM True defaultTimeLocale parseFormatRef refDate 
+  debug verbose $ "Parsed reference date: " ++ show refDate'
   xs' <- filterM (\line -> do
          let v :: Text
              v = at (splitOnDelimiter line) (fieldNo - 1)
