@@ -7,6 +7,7 @@ import qualified Data.Text as T
 import qualified Data.Text.IO as T
 import Data.Text (Text)
 import Safe
+import System.IO
 import Control.Monad
 
 data Options = Options {
@@ -96,4 +97,4 @@ main = do
 
 debug :: Bool -> String -> IO ()
 debug False _ = return ()
-debug True s = putStrLn $ "Log: " ++ s
+debug True s = hPutStrLn stderr $ "Log: " ++ s
